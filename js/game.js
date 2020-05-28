@@ -53,7 +53,9 @@ var fruits = {
 
     window.addEventListener("touchmove", function (e) {
       if (_this.isClicked) {
-        _this.cup.move(e.pageX);
+        var touch = e.originalEvent.touches[0];
+
+        _this.cup.move(touch.pageX);
       }
     });
     setInterval(function () {
