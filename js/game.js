@@ -208,7 +208,7 @@ function getRandomInt(min, max) {
 }
 
 function userProgress(counter) {
-  var start = counter * 4;
+  var start = counter * 6;
 
   if (start > 100) {
     userProgressCallBack();
