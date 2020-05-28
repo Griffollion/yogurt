@@ -1,4 +1,5 @@
 var globalType = null;
+var git = '/yogurt';
 var el = 0;
 var counter = 0;
 var progressElement = document.querySelector(".progress");
@@ -53,9 +54,10 @@ var fruits = {
 
     window.addEventListener("touchmove", function (e) {
       if (_this.isClicked) {
-        var touch = e.originalEvent.touches[0];
-
-        _this.cup.move(touch.pageX);
+        var touchobj = e.changedTouches[0];
+        var dist = parseInt(touchobj.clientX);
+  
+        _this.cup.move(dist);
       }
     });
     setInterval(function () {
@@ -74,22 +76,22 @@ var fruits = {
       }
 
       if (el == 1) {
-        obj = "/yogurt/images/object1.png";
+        obj = git+"/images/object1.png";
         type = 0;
       } else if (el == 2) {
-        obj = "/yogurt/images/object2.png";
+        obj = git+"/images/object2.png";
         type = 0;
       } else if (el == 3) {
-        obj = "/yogurt/images/object3.png";
+        obj = git+"/images/object3.png";
         type = 2;
       } else if (el == 4) {
-        obj = "/yogurt/images/object4.png";
+        obj = git+"/images/object4.png";
         type = 2;
       } else if (el == 5) {
-        obj = "/yogurt/images/object5.png";
+        obj = git+"/images/object5.png";
         type = 1;
       } else if (el == 6) {
-        obj = "/yogurt/images/object6.png";
+        obj = git+"/images/object6.png";
         type = 1;
       }
 
@@ -100,25 +102,25 @@ var fruits = {
     this.cupI = new Image();
 
     if (globalType == 0) {
-      this.cupI.src = "/yogurt/images/yogurt1.png";
+      this.cupI.src = git+"/images/yogurt1.png";
     } else if (globalType == 1) {
-      this.cupI.src = "/yogurt/images/yogurt2.png";
+      this.cupI.src = git+"/images/yogurt2.png";
     } else if (globalType == 2) {
-      this.cupI.src = "/yogurt/images/yogurt3.png";
+      this.cupI.src = git+"/images/yogurt3.png";
     }
 
     this.appleI = new Image();
-    this.appleI.src = "/yogurt/images/object1.png";
+    this.appleI.src = git+"/images/object1.png";
     this.zernoI = new Image();
-    this.zernoI.src = "/yogurt/images/object2.png";
+    this.zernoI.src = git+"/images/object2.png";
     this.malinaI = new Image();
-    this.malinaI.src = "/yogurt/images/object3.png";
+    this.malinaI.src = git+"/images/object3.png";
     this.grechaI = new Image();
-    this.grechaI.src = "/yogurt/images/object4.png";
+    this.grechaI.src = git+"/images/object4.png";
     this.klukvaI = new Image();
-    this.klukvaI.src = "/yogurt/images/object5.png";
+    this.klukvaI.src = git+"/images/object5.png";
     this.cherryI = new Image();
-    this.cherryI.src = "/yogurt/images/object6.png";
+    this.cherryI.src = git+"/images/object6.png";
     callback();
   },
   render: function render() {

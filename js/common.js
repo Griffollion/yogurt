@@ -52,10 +52,6 @@ function setImages(variant) {
   screen2Text.setAttribute("src", texts[variant]);
   screen2Img.setAttribute("src", objects[variant]);
   screen4Img.setAttribute("src", objects[variant]);
-  console.log(zzz[variant]);
-  //   ingridients.forEach(function (el, index) {
-  //     el.setAttribute('src', zzz[variant][index]);
-  //   });
 
   for (var i = 0, len = ingridients.length; i < len; i++) {
     ingridients[i].setAttribute("src", zzz[variant][i]);
@@ -74,16 +70,12 @@ function setObject() {
   for (var i = 0, len = screens.length; i < len; i++) {
     screens[i].classList.remove("active");
   }
-  //   screens.forEach(function (el) {
-  //     el.classList.remove('active');
-  //   });
+
   screens[1].classList.add("active");
 }
 
 function startGame() {
-//   screens.forEach(function (el) {
-//     el.classList.remove("active");
-//   });
+
   for (var i = 0, len = screens.length; i < len; i++) {
     screens[i].classList.remove("active");
   }
