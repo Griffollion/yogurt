@@ -56,22 +56,22 @@ var fruits = {
       }
 
       if (el == 1) {
-        obj = "../images/object1.png";
+        obj = "/images/object1.png";
         type = 0;
       } else if (el == 2) {
-        obj = "../images/object2.png";
+        obj = "/images/object2.png";
         type = 0;
       } else if (el == 3) {
-        obj = "../images/object3.png";
+        obj = "/images/object3.png";
         type = 2;
       } else if (el == 4) {
-        obj = "../images/object4.png";
+        obj = "/images/object4.png";
         type = 2;
       } else if (el == 5) {
-        obj = "../images/object5.png";
+        obj = "/images/object5.png";
         type = 1;
       } else if (el == 6) {
-        obj = "../images/object6.png";
+        obj = "/images/object6.png";
         type = 1;
       }
 
@@ -82,25 +82,25 @@ var fruits = {
     this.cupI = new Image();
 
     if (globalType == 0) {
-      this.cupI.src = "../images/yogurt1.png";
+      this.cupI.src = "/images/yogurt1.png";
     } else if (globalType == 1) {
-      this.cupI.src = "../images/yogurt2.png";
+      this.cupI.src = "/images/yogurt2.png";
     } else if (globalType == 2) {
-      this.cupI.src = "../images/yogurt3.png";
+      this.cupI.src = "/images/yogurt3.png";
     }
 
     this.appleI = new Image();
-    this.appleI.src = "../images/object1.png";
+    this.appleI.src = "/images/object1.png";
     this.zernoI = new Image();
-    this.zernoI.src = "../images/object2.png";
+    this.zernoI.src = "/images/object2.png";
     this.malinaI = new Image();
-    this.malinaI.src = "../images/object3.png";
+    this.malinaI.src = "/images/object3.png";
     this.grechaI = new Image();
-    this.grechaI.src = "../images/object4.png";
+    this.grechaI.src = "/images/object4.png";
     this.klukvaI = new Image();
-    this.klukvaI.src = "../images/object5.png";
+    this.klukvaI.src = "/images/object5.png";
     this.cherryI = new Image();
-    this.cherryI.src = "../images/object6.png";
+    this.cherryI.src = "/images/object6.png";
     callback();
   },
   render: function render() {
