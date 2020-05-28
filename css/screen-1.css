@@ -1,0 +1,98 @@
+.screen-1 .screen__object-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.screen-1 .screen__object-container.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.screen-1 .screen__object-container .screen__object-text {
+  position: absolute;
+  left: 55px;
+  top: 75px;
+  z-index: 1;
+}
+
+.screen-1
+  .screen__object-container.screen__object-container--1
+  .screen__object-text {
+  top: 65px;
+}
+
+.screen-1
+  .screen__object-container.screen__object-container--3
+  .screen__object-text {
+  left: 66px;
+}
+
+.screen-1 .screen__object-container .screen__yogurt {
+  position: absolute;
+  left: 45px;
+  top: 120px;
+}
+
+.screen-1 .screen__arrows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.screen-1 .screen__arrow-left {
+  position: absolute;
+  left: 25px;
+  top: 195px;
+  cursor: pointer;
+}
+
+.screen-1 .screen__arrow-right {
+  position: absolute;
+  right: 25px;
+  top: 195px;
+  cursor: pointer;
+}
+
+.screen-1 .screen__button {
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+
+.screen-1.active .screen__arrows {
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.6s;
+}
+
+.screen-1.active .screen__object-container.active {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.3s;
+}
+
+.screen-1.active .screen__object-container--1.active.fwd,
+.screen-1.active .screen__object-container--2.active.fwd,
+.screen-1.active .screen__object-container--3.active.fwd {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.screen-1.active .screen__object-container--1.active.bck,
+.screen-1.active .screen__object-container--2.active.bck,
+.screen-1.active .screen__object-container--3.active.bck {
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.screen-1.active .screen__button {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.screen-1.active .screen__button:hover {
+    animation: jello-horizontal 0.9s both;
+}

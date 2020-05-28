@@ -1,0 +1,90 @@
+.screen-4 .screen__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 400px;
+  z-index: 10;
+}
+
+.screen-4 .screen__back {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  z-index: 1;
+}
+
+.screen-4 .screen__text,
+.screen-4 .screen__object,
+.screen-4 .screen__ingrideent,
+.screen-4 .screen__ingrideent,
+.screen-4 .screen__button {
+  position: absolute;
+  z-index: 2;
+}
+
+.screen-4 .screen__text {
+  left: 30px;
+  top: 60px;
+}
+
+.screen-4 .screen__object {
+  left: 45px;
+  top: 120px;
+  z-index: 4;
+}
+
+.screen-4 .screen__ingrideent.screen__ingrideent--1 {
+  left: 20px;
+  top: 180px;
+  z-index: 3;
+}
+
+.screen-4 .screen__ingrideent.screen__ingrideent--2 {
+  right: 28px;
+  top: 215px;
+  z-index: 5;
+}
+
+.screen-4 .screen__button {
+  left: 20px;
+  bottom: 25px;
+}
+
+[data-selected="1"] .screen-4.active .screen__ingrideent.screen__ingrideent--1 {
+    left: 37px;
+    top: 148px;
+}
+
+[data-selected="1"] .screen-4.active .screen__ingrideent.screen__ingrideent--2 {
+    right: 37px;
+    top: 215px;
+}
+
+.screen-4.active .screen__object {
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.5s;
+}
+
+.screen-4.active .screen__ingrideent.screen__ingrideent--1 {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.9s;
+}
+.screen-4.active .screen__ingrideent.screen__ingrideent--2 {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.1s;
+}
+
+.screen-4.active .screen__text {
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+.screen-4.active .screen__button {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.4s;
+  z-index: 11;
+}
+
+.screen-4.active .screen__button:hover {
+  animation: jello-horizontal 0.9s both;
+}
