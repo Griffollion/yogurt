@@ -93,6 +93,6 @@
   animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.screen-1.active .screen__button:hover {
+.screen-1.active .screen__button:hover img {
     animation: jello-horizontal 0.9s both;
 }

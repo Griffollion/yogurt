@@ -85,6 +85,6 @@
   z-index: 11;
 }
 
-.screen-4.active .screen__button:hover {
+.screen-4.active .screen__button:hover img{
   animation: jello-horizontal 0.9s both;
 }

@@ -222,7 +222,7 @@ function getRandomInt(min, max) {
 }
 
 function userProgress(counter) {
-  var start = counter * 50;
+  var start = counter * 4;
 
   if (start > 100) {
     userProgressCallBack();
