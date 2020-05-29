@@ -64,14 +64,14 @@ var fruits = {
       var obj = null;
       var type = null;
       var maxSpeed = getRandomInt(100, 200);
-      var graviry = 0.1;
+      var graviry = 0.05;
 
-      if (counter > 5) {
-        graviry = 0.14;
-      } else if (counter > 10) {
-        graviry = 0.2;
-      } else if (counter > 15) {
-        graviry = 0.25;
+      if (counter > 4) {
+        graviry = 0.07;
+      } else if (counter > 8) {
+        graviry = 0.09;
+      } else if (counter > 12) {
+        graviry = 0.12;
       }
 
       if (el == 1) {
@@ -104,7 +104,7 @@ var fruits = {
           graviry
         )
       );
-    }, 400);
+    }, 500);
   },
   preload: function preload(callback) {
     this.cupI = new Image();

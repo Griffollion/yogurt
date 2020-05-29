@@ -96,3 +96,13 @@
 .screen-1.active .screen__button:hover img {
     animation: jello-horizontal 0.9s both;
 }
+
+.screen-1.active .screen__arrow-left img,
+.screen-1.active .screen__arrow-right img {
+  transition: transform .3s;
+}
+
+.screen-1.active .screen__arrow-left:active img,
+.screen-1.active .screen__arrow-right:active img {
+  transform: scale(0.7);
+}
